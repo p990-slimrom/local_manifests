@@ -3,9 +3,9 @@
   <remote  name="bitbucket"
            fetch="https://bitbucket.org/" />
 
-  <remove-project name="SlimRoms//android_external_icu4c" />
+  <remove-project name="SlimRoms/android_external_icu4c" />
 
-  <project path="external/icu4c" name="CyanogenMod/android_external_icu4c" remote="github" revision="cm-11.0" />
+  <project path="external/icu4c" name="p990-slimrom/android_external_icu4c" remote="github" revision="kk4.4" />
  
   <!-- p990 stuff -->
   <project path="device/lge/p990" name="p990-slimrom/android_device_lge_p990" remote="github" revision="cm-11.0" />
