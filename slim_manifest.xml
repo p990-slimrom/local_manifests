@@ -3,7 +3,11 @@
   <remote  name="bitbucket"
            fetch="https://bitbucket.org/" />
 
+  <remove-project name="SlimRoms/packages_apps_Camera2" />
+
   <remove-project name="SlimRoms/android_external_icu4c" />
+
+  <remove-project name="SlimRoms/packages_inputmethods_LatinIME" />
 
   <project path="external/icu4c" name="p990-slimrom/android_external_icu4c" remote="github" revision="kk4.4" />
  
