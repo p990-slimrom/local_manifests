@@ -3,19 +3,50 @@
   <remote  name="bitbucket"
            fetch="https://bitbucket.org/" />
 
+<!--
+  <remove-project name="SlimRoms/packages_inputmethods_LatinIME" />
+-->
+
   <remove-project name="SlimRoms/packages_apps_Camera2" />
 
+  <!-- Toolchain -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="SaberMod/android_prebuilts_gcc_linux-x86_arm_sabermod-arm-linux-androideabi-4.8" remote="github" revision="sm-kk-mr1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="SaberMod/android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.8" remote="github" revision="sm-kk-mr1" />
+
+  <!-- slim repos -->
+  <remove-project name="SlimRoms/bootable_recovery" />
+  <project path="bootable/recovery" name="p990-slimrom/bootable_recovery" remote="github" revision="kk4.4" />
+
+  <remove-project name="SlimRoms/android_build" />
+  <project path="build" name="p990-slimrom/android_build" remote="github" revision="kk4.4" />
+
+  <remove-project name="SlimRoms/vendor_slim" />
+  <project path="build" name="p990-slimrom/vendor_slim" remote="github" revision="kk4.4" />
+
+  <remove-project name="SlimRoms/android_dalvik" />
+  <project path="dalvik" name="p990-slimrom/android_build" remote="github" revision="kk4.4" />
+
+  <remove-project name="SlimRoms/frameworks_av" />
+  <project path="frameworks/av" name="p990-slimrom/frameworks_av" remote="github" revision="kk4.4" />
+
+  <remove-project name="SlimRoms/frameworks_base" />
+  <project path="frameworks/base" name="p990-slimrom/frameworks_base" remote="github" revision="kk4.4" />
+
+  <remove-project name="platform/external/chromium" />
+  <project path="external/chromium" name="p990-slimrom/platform_external_chromium" remote="github" revision="kk4.4" />
+
   <remove-project name="SlimRoms/android_external_icu4c" />
-
-  <remove-project name="SlimRoms/packages_inputmethods_LatinIME" />
-
   <project path="external/icu4c" name="p990-slimrom/android_external_icu4c" remote="github" revision="kk4.4" />
+
+  <!-- DSPManager -->
+  <remove-project name="SlimRoms/packages_apps_DSPManager" />
+  <project path="packages/apps/DSPManager" name="p990-slimrom/packages_apps_DSPManager" remote="github" revision="kk4.4" />
  
   <!-- p990 stuff -->
-  <project path="device/lge/p990" name="p990-slimrom/android_device_lge_p990" remote="github" revision="cm-11.0" />
-  <project path="kernel/lge/star" name="hjunii/lge-kernel-star" remote="bitbucket" revision="master" />
-
-  <!-- device repos -->
+  <project path="device/lge/p990" name="p990-slimrom/android_device_lge_p990" remote="github" revision="kk4.4" />
   <project path="vendor/lge" name="hjunii/proprietary_vendor_lge" remote="github" revision="cm-11.0" />
+
+  <!-- google apps-->
+  <project path="vendor/google" name="tonyp/android_vendor_google" remote="github" revision="cm-11.0" />
 
 </manifest>
