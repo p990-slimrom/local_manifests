@@ -21,7 +21,7 @@
   <project path="build" name="p990-slimrom/android_build" remote="github" revision="kk4.4" />
 
   <remove-project name="SlimRoms/vendor_slim" />
-  <project path="build" name="p990-slimrom/vendor_slim" remote="github" revision="kk4.4" />
+  <project path="vendor/slim" name="p990-slimrom/vendor_slim" remote="github" revision="kk4.4" />
 
   <remove-project name="SlimRoms/android_dalvik" />
   <project path="dalvik" name="p990-slimrom/android_build" remote="github" revision="kk4.4" />
