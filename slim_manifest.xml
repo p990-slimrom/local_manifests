@@ -14,6 +14,7 @@
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="SaberMod/android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.8" remote="github" revision="sm-kk-mr1" />
 
   <!-- slim repos -->
+<!--
   <remove-project name="SlimRoms/bootable_recovery" />
   <project path="bootable/recovery" name="p990-slimrom/bootable_recovery" remote="github" revision="kk4.4" />
 
@@ -34,7 +35,7 @@
 
   <remove-project name="platform/external/chromium" />
   <project path="external/chromium" name="p990-slimrom/platform_external_chromium" remote="github" revision="kk4.4" />
-
+-->
   <remove-project name="SlimRoms/android_external_icu4c" />
   <project path="external/icu4c" name="p990-slimrom/android_external_icu4c" remote="github" revision="kk4.4" />
 
