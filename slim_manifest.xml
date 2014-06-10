@@ -46,7 +46,8 @@
 
   <!-- p990 stuff -->
   <project path="device/lge/p990" name="p990-slimrom/android_device_lge_p990" remote="github" revision="kk4.4" />
-  <project path="vendor/lge" name="tonyp/proprietary_vendor_lge.git" remote="github" revision="cm-10.2-bcmdhd" />
+  <project path="vendor/lge" name="p990-slimrom/proprietary_vendor_lge.git" remote="github" revision="kk4.4" />
+<!--  <project path="vendor/lge" name="tonyp/proprietary_vendor_lge.git" remote="github" revision="cm-10.2-bcmdhd" /> -->
 <!--  <project path="vendor/lge" name="hjunii/proprietary_vendor_lge" remote="github" revision="cm-11.0" /> -->
 
   <!-- google apps-->
