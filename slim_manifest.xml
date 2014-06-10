@@ -10,8 +10,13 @@
   <remove-project name="SlimRoms/packages_apps_Camera2" />
 
   <!-- Toolchain -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" revision="master" groups="pdk,linux,arm" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" revision="master" groups="pdk,linux,arm" />
+
+<!---
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="SaberMod/android_prebuilts_gcc_linux-x86_arm_sabermod-arm-linux-androideabi-4.8" remote="github" revision="sm-kk-mr1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="SaberMod/android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.8" remote="github" revision="sm-kk-mr1" />
+-->
 
   <!-- slim repos -->
 <!--
@@ -39,13 +44,10 @@
   <remove-project name="SlimRoms/android_external_icu4c" />
   <project path="external/icu4c" name="p990-slimrom/android_external_icu4c" remote="github" revision="kk4.4" />
 
-  <!-- DSPManager -->
-  <remove-project name="SlimRoms/packages_apps_DSPManager" />
-  <project path="packages/apps/DSPManager" name="p990-slimrom/packages_apps_DSPManager" remote="github" revision="kk4.4" />
- 
   <!-- p990 stuff -->
   <project path="device/lge/p990" name="p990-slimrom/android_device_lge_p990" remote="github" revision="kk4.4" />
-  <project path="vendor/lge" name="hjunii/proprietary_vendor_lge" remote="github" revision="cm-11.0" />
+  <project path="vendor/lge" name="tonyp/proprietary_vendor_lge.git" remote="github" revision="cm-10.2-bcmdhd" />
+<!--  <project path="vendor/lge" name="hjunii/proprietary_vendor_lge" remote="github" revision="cm-11.0" /> -->
 
   <!-- google apps-->
   <project path="vendor/google" name="tonyp/android_vendor_google" remote="github" revision="cm-11.0" />
