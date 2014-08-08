@@ -66,7 +66,10 @@
   <!-- p990 stuff -->
   <project path="device/lge/p990" name="p990-slimrom/android_device_lge_p990" remote="github" revision="kk4.4" />
   <project path="vendor/lge" name="p990-slimrom/proprietary_vendor_lge.git" remote="github" revision="kk4.4" />
-<!--  <project path="kernel/lge/star" name="Firtecy/kowalski" remote="github" revision="exp" /> -->
+<!--  <project path="kernel/lge/p990" name="Firtecy/kowalski" remote="github" revision="exp" /> -->
+
+  <!-- my vendor repo-->
+  <project path="vendor/djnoxd" name="p990-slimrom/android_vendor_djnoxd" remote="github" revision="master" />
 
   <!-- google apps-->
   <project path="vendor/google" name="p990-slimrom/android_vendor_google" remote="github" revision="4.4.4" />
