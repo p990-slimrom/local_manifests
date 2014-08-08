@@ -10,6 +10,7 @@
           fetch="git://git.kernel.org/pub/scm/" />
 
   <remove-project name="SlimRoms/packages_apps_Calendar" />
+  <remove-project name="SlimRoms/packages_providers_CalendarProvider" />
 
   <remove-project name="SlimRoms/packages_inputmethods_LatinIME" />
 
