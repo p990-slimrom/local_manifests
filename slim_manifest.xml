@@ -18,6 +18,16 @@
 
   <remove-project name="SlimRoms/packages_apps_Camera2" />
 
+  <!-- SaberMod toolchain -->
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" />
+  
+  <project name="SaberMod/android_prebuilts_gcc_linux-x86_arm_sabermod-arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="github" revision="sm-kk-mr1" />
+  <project name="SaberMod/android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="github" revision="sm-kk-mr1"/>
+
+
   <!-- blueZ-->
 <!--  <remove-project name="SlimRoms/android_external_bluetooth_bluedroid"/> -->
 <!--  <project path="external/bluetooth/bluez" name="AndroidOpenSourceXperia/android_external_bluetooth_bluez" remote="github" revision="5.21"/> -->
