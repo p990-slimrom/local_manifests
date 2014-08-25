@@ -23,33 +23,18 @@
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" />
-
-  <project name="p990-slimrom/Linaro" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" remote="github" revision="4.9-eabi" />
-  <project name="p990-slimrom/Linaro" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="github" revision="4.9-androideabi" />
-<!--
+  
   <project name="SaberMod/android_prebuilts_gcc_linux-x86_arm_sabermod-arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="github" revision="sm-kk-mr1" />
   <project name="SaberMod/android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="github" revision="sm-kk-mr1"/>
--->
 
-<!--
-  <remove-project name="SlimRoms/android_art" />
-  <project name="platform/art" path="art" remote="aosp" revision="l-preview" />
-  <remove-project name="SlimRoms/android_dalvik" />
-  <project name="platform/dalvik" path="dalvik" remote="aosp" revision="l-preview" />
-  <project path="external/libcxx" name="platform/external/libcxx" remote="aosp" revision="l-preview" />
-  <project path="external/libcxxabi" name="platform/external/libcxxabi" remote="aosp" revision="l-preview" />
-  <project path="external/libcxxrt" name="platform/external/libcxxrt" remote="aosp" revision="l-preview" />
-  <project path="external/libunwind" name="platform/external/libunwind" remote="aosp" revision="l-preview" />
--->
 
   <!-- blueZ-->
 <!--  <remove-project name="SlimRoms/android_external_bluetooth_bluedroid"/> -->
-<!--  <project path="external/bluetooth/bluez" name="AndroidOpenSourceXperia/android_external_bluetooth_bluez" remote="github" revision="5.21"/>
-  <project path="external/bluetooth/bluez" name="p990-slimrom/android_external_bluetooth_bluez" remote="github" revision="master"/> -->
-<!--  <project remote="korg" path="external/bluetooth/bluez" name="bluetooth/bluez" group="pdk" revision="master"/> -->
-<!--  <project path="external/bluetooth/bluez" name="SlimKatXperia/android_external_bluetooth_bluez" remote="github" revision="master"/>
-  <project path="external/bluetooth/sbc" name="bluetooth/sbc" remote="korg" revision="master" groups="pdk" />
-  <project path="external/bluetooth/glib" name="aosp-bluez.glib" remote="googlecode" revision="master" groups="pdk" /> -->
+<!--  <project path="external/bluetooth/bluez" name="AndroidOpenSourceXperia/android_external_bluetooth_bluez" remote="github" revision="5.21"/> -->
+<!--  <project path="external/bluetooth/bluez" name="p990-slimrom/android_external_bluetooth_bluez" remote="github" revision="master"/> -->
+<!--  <project path="external/bluetooth/sbc" name="bluetooth/sbc" remote="korg" revision="master" groups="pdk" />
+  <project path="external/bluetooth/glib" name="aosp-bluez.glib" remote="googlecode" revision="master" groups="pdk" />
+-->
 
   <!-- OpenDelta -->
   <project path="packages/apps/OpenDelta" name="p990-slimrom/android_packages_apps_OpenDelta" remote="github" revision="android-4.4" />
