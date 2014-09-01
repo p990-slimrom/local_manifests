@@ -18,6 +18,9 @@
 
   <remove-project name="SlimRoms/packages_apps_Camera2" />
 
+  <remove-project name="SlimRoms/android_external_wpa_supplicant_8" />
+  <project path="external/wpa_supplicant_8" name="CyanogenMod/android_external_wpa_supplicant_8" remote="github" revision="cm-11.0" groups="pdk" />
+
   <!-- SaberMod toolchain -->
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" />
