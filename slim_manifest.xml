@@ -10,21 +10,56 @@
 	  fetch="https://code.google.com/p/" />
 
 
+  <!-- clean up -->
   <remove-project name="SlimRoms/packages_apps_Calendar" />
   <remove-project name="SlimRoms/packages_providers_CalendarProvider" />
-
   <remove-project name="SlimRoms/packages_inputmethods_LatinIME" />
-
   <remove-project name="SlimRoms/packages_apps_Gallery2" />
-
   <remove-project name="SlimRoms/packages_apps_Camera2" />
 
+  <!-- WPA SUPPLICANT (Tethering) -->
   <remove-project name="SlimRoms/android_external_wpa_supplicant_8" />
   <project path="external/wpa_supplicant_8" name="p990-slimrom/android_external_wpa_supplicant_8" remote="github" revision="kk4.4" groups="pdk" />
 
-  <!-- bionic -->
+  <!-- bionic (cortex-a9) -->
   <remove-project name="SlimRoms/android_bionic" />
   <project path="bionic" name="p990-slimrom/android_bionic" remote="github" revision="kk4.4" groups="pdk" />
+
+  <!-- build (gcc4.8+) -->
+  <remove-project name="SlimRoms/android_build" />
+  <project path="build" name="p990-slimrom/android_build" remote="github" revision="kk4.4" groups="pdk" />
+
+  <!-- recovery (TWRP) -->
+  <remove-project name="SlimRoms/bootable_recovery" />
+  <project path="bootable/recovery" name="p990-slimrom/bootable_recovery" remote="github" revision="kk4.4" />
+
+  <!-- OpenDelta -->
+  <project path="packages/apps/OpenDelta" name="p990-slimrom/android_packages_apps_OpenDelta" remote="github" revision="android-4.4" />
+  <remove-project name="SlimRoms/packages_apps_Settings" />
+  <project path="packages/apps/Settings" name="p990-slimrom/packages_apps_Settings" remote="github" revision="kk4.4" />
+  <remove-project name="SlimRoms/packages_apps_SlimCenter" />
+  <project path="packages/apps/SlimCenter" name="p990-slimrom/packages_apps_SlimCenter" remote="github" revision="kk4.4" />
+
+  <!-- icu4c (GPS) -->
+  <remove-project name="SlimRoms/android_external_icu4c" />
+  <project path="external/icu4c" name="p990-slimrom/android_external_icu4c" remote="github" revision="kk4.4" />
+
+  <!-- vendor Slim (revert DPI changes) -->
+  <remove-project name="SlimRoms/vendor_slim" />
+  <project path="vendor/slim" name="p990-slimrom/vendor_slim" remote="github" revision="kk4.4" />
+
+  <!-- frameworks base -->
+  <remove-project name="SlimRoms/frameworks_base" />
+  <project path="frameworks/base" name="p990-slimrom/frameworks_base" remote="github" revision="kk4.4" />
+
+  <!-- frameworks native -->
+  <remove-project name="SlimRoms/frameworks_native" />
+  <project path="frameworks/native" name="p990-slimrom/frameworks_native" remote="github" revision="kk4.4" />
+
+  <!-- frameworks av -->
+  <remove-project name="SlimRoms/frameworks_av" />
+  <project path="frameworks/av" name="p990-slimrom/frameworks_av" remote="github" revision="kk4.4" />
+
 
   <!-- SaberMod toolchain -->
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" />
@@ -37,18 +72,8 @@
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="ArchiDroid/Toolchain" remote="github" revision="linaro-4.9-arm-eabi" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="ArchiDroid/Toolchain" remote="github" revision="linaro-4.9-arm-linux-androideabi" />
 
-  <!-- recovery -->
-  <remove-project name="SlimRoms/bootable_recovery" />
-  <project path="bootable/recovery" name="p990-slimrom/bootable_recovery" remote="github" revision="kk4.4" />
 
-
-  <!-- OpenDelta -->
-  <project path="packages/apps/OpenDelta" name="p990-slimrom/android_packages_apps_OpenDelta" remote="github" revision="android-4.4" />
-
-  <!-- icu4c -->
-  <remove-project name="SlimRoms/android_external_icu4c" />
-  <project path="external/icu4c" name="p990-slimrom/android_external_icu4c" remote="github" revision="kk4.4" />
-
+  <!-- DEVICE -->
   <!-- p990 stuff -->
   <project path="device/lge/p990" name="p990-slimrom/android_device_lge_p990" remote="github" revision="kk4.4" />
   <project path="vendor/lge" name="p990-slimrom/proprietary_vendor_lge.git" remote="github" revision="kk4.4" />
