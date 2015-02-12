@@ -17,6 +17,10 @@
   <remove-project name="SlimRoms/packages_apps_Gallery2" />
   <remove-project name="SlimRoms/packages_apps_Camera2" />
 
+  <!-- webp (graphic glitches) -->
+  <remove-project name="platform/external/webp" />
+  <project path="external/webp" name="p990-slimrom/android_external_webp" remote="github" revision="kk4.4" />
+
   <!-- WPA SUPPLICANT (Tethering) -->
   <remove-project name="SlimRoms/android_external_wpa_supplicant_8" />
   <project path="external/wpa_supplicant_8" name="p990-slimrom/android_external_wpa_supplicant_8" remote="github" revision="kk4.4" groups="pdk" />
