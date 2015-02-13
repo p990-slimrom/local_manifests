@@ -9,12 +9,7 @@
   <remote name="googlecode"
 	  fetch="https://code.google.com/p/" />
 
-
-  <!-- clean up -->
-  <remove-project name="SlimRoms/packages_apps_Calendar" />
-  <remove-project name="SlimRoms/packages_providers_CalendarProvider" />
-  <remove-project name="SlimRoms/packages_inputmethods_LatinIME" />
-  <remove-project name="SlimRoms/packages_apps_Gallery2" />
+  <!-- Remove not working camera -->
   <remove-project name="SlimRoms/packages_apps_Camera2" />
 
   <!-- webp (graphic glitches) -->
@@ -64,6 +59,9 @@
   <remove-project name="SlimRoms/frameworks_av" />
   <project path="frameworks/av" name="p990-slimrom/frameworks_av" remote="github" revision="kk4.4" />
 
+  <!-- art (gcc4.8+ compatibility) -->
+  <remove-project name="SlimRoms/android_art" />
+  <project path="art" name="p990-slimrom/android_art" remote="github" revision="kk4.4" />
 
   <!-- SaberMod toolchain -->
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" />
@@ -85,8 +83,5 @@
 
   <!-- my vendor repo-->
   <project path="vendor/djnoxd" name="p990-slimrom/android_vendor_djnoxd" remote="github" revision="master" />
-
-  <!-- google apps-->
-  <project path="vendor/google" name="p990-slimrom/android_vendor_google" remote="github" revision="4.4.4" />
 
 </manifest>
