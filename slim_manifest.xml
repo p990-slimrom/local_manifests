@@ -1,90 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="bitbucket"
-          fetch="https://bitbucket.org/" />
 
-  <remote name="googlecode"
-          fetch="https://code.google.com/p/" />
+  <remove-project name="SlimRoms/android_build" />
+  <project path="build" name="p990-slimrom/android_build" remote="github" revision="lp5.1" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
 
-  <remote name="korg"
-          fetch="git://git.kernel.org/pub/scm/" />
+  <!-- recovery (TWRP) -->
+  <remove-project name="SlimRoms/bootable_recovery" />
+  <project path="bootable/recovery" name="omnirom/android_bootable_recovery" remote="github" revision="android-5.1" />
 
-  <remove-project name="SlimRoms/packages_apps_Calendar" />
-  <remove-project name="SlimRoms/packages_providers_CalendarProvider" />
-
-  <remove-project name="SlimRoms/packages_inputmethods_LatinIME" />
-
-  <remove-project name="SlimRoms/packages_apps_Gallery2" />
-
-  <remove-project name="SlimRoms/packages_apps_Camera2" />
-
-  <remove-project name="SlimRoms/android_external_wpa_supplicant_8" />
-  <project path="external/wpa_supplicant_8" name="CyanogenMod/android_external_wpa_supplicant_8" remote="github" revision="cm-11.0" groups="pdk" />
+  <!-- bionic (cortex-a9) -->
+  <remove-project name="SlimRoms/android_bionic" />
+  <project path="bionic" name="p990-slimrom/android_bionic" remote="github" revision="lp5.1" groups="pdk" />
 
   <!-- SaberMod toolchain -->
-  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" />
-  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" />
-  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" />
-  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" />
-  
-  <project name="p990-slimrom/android_prebuilts_gcc_linux-x86_arm_sabermod-arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="github" revision="sm-kk-mr1" />
-  <project name="p990-slimrom/android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="github" revision="sm-kk-mr1"/>
-
-
-  <!-- blueZ-->
-<!--  <remove-project name="SlimRoms/android_external_bluetooth_bluedroid"/> -->
-<!--  <project path="external/bluetooth/bluez" name="AndroidOpenSourceXperia/android_external_bluetooth_bluez" remote="github" revision="5.21"/> -->
-<!--  <project path="external/bluetooth/bluez" name="p990-slimrom/android_external_bluetooth_bluez" remote="github" revision="master"/> -->
-<!--  <project path="external/bluetooth/sbc" name="bluetooth/sbc" remote="korg" revision="master" groups="pdk" />
-  <project path="external/bluetooth/glib" name="aosp-bluez.glib" remote="googlecode" revision="master" groups="pdk" />
+<!--  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="ArchiDroid/Toolchain" remote="github" revision="linaro-4.9-arm-eabi" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="ArchiDroid/Toolchain" remote="github" revision="linaro-4.9-arm-linux-androideabi" />
 -->
+  <!-- framewroks_av -->
+  <remove-project name="SlimRoms/frameworks_av" />
+  <project path="frameworks/av" name="p990-slimrom/frameworks_av" remote="github" revision="lp5.1" />
 
-  <!-- OpenDelta -->
-  <project path="packages/apps/OpenDelta" name="p990-slimrom/android_packages_apps_OpenDelta" remote="github" revision="android-4.4" />
+  <!-- framewroks_native -->
+  <remove-project name="SlimRoms/frameworks_native" />
+  <project path="frameworks/native" name="p990-slimrom/frameworks_native" remote="github" revision="lp5.1" />
 
-  <!-- Toolchain -->
-<!--
-    <remove-project name="platform/prebuilts/clang/darwin-x86/3.1" />
-    <remove-project name="platform/prebuilts/clang/darwin-x86/3.2" />
-    <remove-project name="platform/prebuilts/clang/darwin-x86/arm/3.3" />
-    <remove-project name="platform/prebuilts/clang/darwin-x86/host/3.3" />
-    <remove-project name="platform/prebuilts/clang/darwin-x86/mips/3.3" />
-    <remove-project name="platform/prebuilts/clang/darwin-x86/x86/3.3" />
-    <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.7" />
-    <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6" />
-    <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.7" />
-    <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6" />
-    <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.7" />
-    <remove-project name="platform/prebuilts/gcc/darwin-x86/host/headers" />
-    <remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
-    <remove-project name="platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.6" />
-    <remove-project name="platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.7" />
-    <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6" />
-    <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7" />
-    
-    <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" groups="pdk,linux,arm" revision="master" />
-    <project path="prebuilt/linux-x86/toolchain/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm" revision="master"/>
-    <project path="prebuilts/clang/linux-x86/host/3.4" name="platform/prebuilts/clang/linux-x86/host/3.4" groups="pdk,linux" revision="master"/>
-    <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" groups="pdk,linux" revision="master"/>
-    <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" groups="pdk,linux" revision="master"/>
--->
-<!--  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" revision="master" groups="pdk,linux,arm" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" revision="master" groups="pdk,linux,arm" />
--->
+  <!-- ffmpeg -->
+  <remove-project name="SlimRoms/android_external_ffmpeg" />
+  <remove-project name="SlimRoms/android_external_stagefright-plugins" />
 
-  <!-- icu4c -->
-  <remove-project name="SlimRoms/android_external_icu4c" />
-  <project path="external/icu4c" name="p990-slimrom/android_external_icu4c" remote="github" revision="kk4.4" />
-
-  <!-- p990 stuff -->
-  <project path="device/lge/p990" name="p990-slimrom/android_device_lge_p990" remote="github" revision="kk4.4" />
-  <project path="vendor/lge" name="p990-slimrom/proprietary_vendor_lge.git" remote="github" revision="kk4.4" />
-<!--  <project path="kernel/lge/p990" name="Firtecy/kowalski" remote="github" revision="exp" /> -->
-
-  <!-- my vendor repo-->
-  <project path="vendor/djnoxd" name="p990-slimrom/android_vendor_djnoxd" remote="github" revision="master" />
-
-  <!-- google apps-->
-  <project path="vendor/google" name="p990-slimrom/android_vendor_google" remote="github" revision="4.4.4" />
-
+<!--  <project name="wulsic/android_device_lge_p990" path="device/lge/p990" remote="github" revision="omni-5.0" /> -->
+  <project name="p990-slimrom/android_device_lge_p990" path="device/lge/p990" remote="github" revision="lp5.1" />
+  <project name="p990-slimrom/proprietary_vendor_lge.git" path="vendor/lge" remote="github" revision="kk4.4" />
 </manifest>
