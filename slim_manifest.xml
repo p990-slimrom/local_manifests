@@ -25,6 +25,9 @@
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="ArchiDroid/Toolchain" remote="github" revision="linaro-4.9-arm-linux-androideabi" />
 -->
 
+  <!-- Remove not working camera -->
+  <remove-project name="SlimRoms/packages_apps_Camera2" />
+
   <!-- framewroks_av -->
   <remove-project name="SlimRoms/frameworks_av" />
   <project path="frameworks/av" name="p990-slimrom/frameworks_av" remote="github" revision="lp5.1" />
