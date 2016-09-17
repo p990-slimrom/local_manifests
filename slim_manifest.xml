@@ -2,22 +2,29 @@
 <manifest>
 
   <remove-project name="SlimRoms/android_build" />
-  <project path="build" name="p990-slimrom/android_build" remote="github" revision="lp5.1" >
+  <project path="build" name="p990-slimrom/android_build" groups="pdk" remote="github" revision="lp5.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
   <!-- recovery (TWRP) -->
-  <remove-project name="SlimRoms/bootable_recovery" />
+<!--  <remove-project name="SlimRoms/bootable_recovery" />
   <project path="bootable/recovery" name="omnirom/android_bootable_recovery" remote="github" revision="android-5.1" />
+-->
 
   <!-- bionic (cortex-a9) -->
-  <remove-project name="SlimRoms/android_bionic" />
+<!--  <remove-project name="SlimRoms/android_bionic" />
   <project path="bionic" name="p990-slimrom/android_bionic" remote="github" revision="lp5.1" groups="pdk" />
+-->
 
   <!-- SaberMod toolchain -->
-<!--  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="ArchiDroid/Toolchain" remote="github" revision="linaro-4.9-arm-eabi" />
+  <!-- build (gcc4.8+) -->
+<!--
+  <remove-project name="SlimRoms/android_build" />
+  <project path="build" name="platform/build" groups="pdk" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="ArchiDroid/Toolchain" remote="github" revision="linaro-4.9-arm-eabi" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="ArchiDroid/Toolchain" remote="github" revision="linaro-4.9-arm-linux-androideabi" />
 -->
+
   <!-- framewroks_av -->
   <remove-project name="SlimRoms/frameworks_av" />
   <project path="frameworks/av" name="p990-slimrom/frameworks_av" remote="github" revision="lp5.1" />
@@ -26,11 +33,27 @@
   <remove-project name="SlimRoms/frameworks_native" />
   <project path="frameworks/native" name="p990-slimrom/frameworks_native" remote="github" revision="lp5.1" />
 
+  <!-- framewroks_wilhelm -->
+  <remove-project name="platform/frameworks/wilhelm" />
+  <project path="frameworks/wilhelm" name="p990-slimrom/frameworks_wilhelm" remote="github" revision="lp5.1" />
+ 
+
   <!-- ffmpeg -->
   <remove-project name="SlimRoms/android_external_ffmpeg" />
-  <remove-project name="SlimRoms/android_external_stagefright-plugins" />
+  <project path="external/ffmpeg" name="p990-slimrom/android_external_ffmpeg" remote="github" revision="lp5.1" />
 
-<!--  <project name="wulsic/android_device_lge_p990" path="device/lge/p990" remote="github" revision="omni-5.0" /> -->
-  <project name="p990-slimrom/android_device_lge_p990" path="device/lge/p990" remote="github" revision="lp5.1" />
+<!--  <remove-project name="SlimRoms/android_external_stagefright-plugins" /> -->
+
+
+  <remove-project name="SlimRoms/hardware_libhardware" />
+  <project path="hardware/libhardware" name="p990-slimrom/hardware_libhardware" remote="github" revision="lp5.1" />
+
+  <remove-project name="SlimRoms/hardware_libhardware_legacy" />
+  <project path="hardware/libhardware_legacy" name="p990-slimrom/hardware_libhardware_legacy" remote="github" revision="lp5.1" />
+
+  <project name="p990-slimrom/kowalski.git" path="kernel/lge/p990" remote="github" revision="firtecy-exp" />
+  <project name="gucky01/tonyp_device_lge_p990" path="device/lge/p990" remote="github" revision="cm-12.1" />
+<!--  <project name="gucky01/android_device_lge_p990" path="device/lge/p990" remote="github" revision="cm-12.0" /> -->
+<!--  <project name="p990-slimrom/android_device_lge_p990" path="device/lge/p990" remote="github" revision="lp5.0" />-->
   <project name="p990-slimrom/proprietary_vendor_lge.git" path="vendor/lge" remote="github" revision="kk4.4" />
 </manifest>
