@@ -7,9 +7,9 @@
   </project>
 
   <!-- recovery (TWRP) -->
-<!--  <remove-project name="SlimRoms/bootable_recovery" />
+  <remove-project name="SlimRoms/bootable_recovery" />
   <project path="bootable/recovery" name="omnirom/android_bootable_recovery" remote="github" revision="android-5.1" />
--->
+
 
   <!-- bionic (cortex-a9) -->
 <!--  <remove-project name="SlimRoms/android_bionic" />
