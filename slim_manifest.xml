@@ -59,8 +59,6 @@
   <project path="hardware/libhardware_legacy" name="p990-slimrom/hardware_libhardware_legacy" remote="github" revision="lp5.1" />
 
   <project name="p990-slimrom/kowalski.git" path="kernel/lge/p990" remote="github" revision="firtecy-exp" />
-  <project name="gucky01/tonyp_device_lge_p990" path="device/lge/p990" remote="github" revision="cm-12.1" />
-<!--  <project name="gucky01/android_device_lge_p990" path="device/lge/p990" remote="github" revision="cm-12.0" /> -->
-<!--  <project name="p990-slimrom/android_device_lge_p990" path="device/lge/p990" remote="github" revision="lp5.0" />-->
+  <project name="p990-slimrom/android_device_lge_p990" path="device/lge/p990" remote="github" revision="lp5.1" />
   <project name="p990-slimrom/proprietary_vendor_lge.git" path="vendor/lge" remote="github" revision="kk4.4" />
 </manifest>
