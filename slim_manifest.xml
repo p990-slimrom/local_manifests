@@ -29,7 +29,7 @@
   <remove-project name="SlimRoms/packages_apps_Camera2" />
 
   <!-- icu4c (GPS) -->
-  <remove-project name="SlimRoms/android_external_icu4c" />
+  <remove-project name="platform/external/icu" />
   <project path="external/icu" name="p990-slimrom/android_external_icu4c" remote="github" revision="lp5.1" />
 
   <!-- framewroks_av -->
