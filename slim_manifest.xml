@@ -11,10 +11,9 @@
   <project path="bootable/recovery" name="omnirom/android_bootable_recovery" remote="github" revision="android-5.1" />
 
 
-  <!-- bionic (cortex-a9) -->
-<!--  <remove-project name="SlimRoms/android_bionic" />
+  <!-- bionic -->
+  <remove-project name="SlimRoms/android_bionic" />
   <project path="bionic" name="p990-slimrom/android_bionic" remote="github" revision="lp5.1" groups="pdk" />
--->
 
   <!-- SaberMod toolchain -->
   <!-- build (gcc4.8+) -->
